@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Tenses Practice - Practica Tiempos Verbales</title>
+    <style>
+        :root {
+            --color-white: rgba(255, 255, 255, 1);
+            --color-black: rgba(0, 0, 0, 1);
+            --color-cream-50: rgba(252, 252, 249, 1);
+            --color-cream-100: rgba(255, 255, 253, 1);
+            --color-gray-200: rgba(245, 245, 245, 1);
+            --color-gray-300: rgba(167, 169, 169, 1);
+            --color-gray-400: rgba(119, 124, 124, 1);
+            --color-slate-500: rgba(98, 108, 113, 1);
+            --color-brown-600: rgba(94, 82, 64, 1);
+            --color-charcoal-700: rgba(31, 33, 33, 1);
+            --color-charcoal-800: rgba(38, 40, 40, 1);
+            --color-slate-900: rgba(19, 52, 59, 1);
+            --color-teal-300: rgba(50, 184, 198, 1);
+            --color-teal-400: rgba(45, 166, 178, 1);
+            --color-teal-500: rgba(33, 128, 141, 1);
+            --color-teal-600: rgba(29, 116, 128, 1);
+            --color-teal-700: rgba(26, 104, 115, 1);
+            --color-teal-800: rgba(41, 150, 161, 1);
+            --color-red-400: rgba(255, 84, 89, 1);
+            --color-red-500: rgba(192, 21, 47, 1);
+            --color-green-500: rgba(34, 197, 94, 1);
+            --color-orange-400: rgba(230, 129, 97, 1);
+            --color-orange-500: rgba(168, 75, 47, 1);
+
+            --color-brown-600-rgb: 94, 82, 64;
+            --color-teal-500-rgb: 33, 128, 141;
+            --color-slate-900-rgb: 19, 52, 59;
+            --color-slate-500-rgb: 98, 108, 113;
+            --color-red-500-rgb: 192, 21, 47;
+            --color-green-500-rgb: 34, 197, 94;
+
+            --color-background: var(--color-cream-50);
+            --color-surface: var(--color-cream-100);
+            --color-text: var(--color-slate-900);
+            --color-text-secondary: var(--color-slate-500);
+            --color-primary: var(--color-teal-500);
+            --color-primary-hover: var(--color-teal-600);
+            --color-primary-active: var(--color-teal-700);
+            --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+            --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+            --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+            --color-btn-primary-text: var(--color-cream-50);
+            --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+            --color-error: var(--color-red-500);
+            --color-success: var(--color-green-500);
+            --color-warning: var(--color-orange-500);
+
+            --focus-ring: 0 0 0 3px rgba(var(--color-teal-500-rgb), 0.4);
+            --focus-outline: 2px solid var(--color-primary);
+
+            --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-size-sm: 12px;
+            --font-size-base: 14px;
+            --font-size-md: 14px;
+            --font-size-lg: 16px;
+            --font-size-xl: 18px;
+            --font-size-2xl: 20px;
+            --font-size-3xl: 24px;
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 550;
+            --font-weight-bold: 600;
+            --line-height-tight: 1.2;
+            --line-height-normal: 1.5;
+
+            --space-4: 4px;
+            --space-6: 6px;
+            --space-8: 8px;
+            --space-12: 12px;
+            --space-16: 16px;
+            --space-20: 20px;
+            --space-24: 24px;
+            --space-32: 32px;
+
+            --radius-sm: 6px;
+            --radius-base: 8px;
+            --radius-md: 10px;
+            --radius-lg: 12px;
+            --radius-full: 9999px;
+
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+
+            --duration-fast: 150ms;
+            --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            font-family: var(--font-family-base);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            height: 100%;
+        }
+
+        body {
+            padding: var(--space-16);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-teal-600));
+            color: var(--color-btn-primary-text);
+            padding: var(--space-24);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-24);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header h1 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--space-8);
+        }
+
+        .header p {
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* Navigation */
+        .nav-tabs {
+            display: flex;
+            gap: var(--space-8);
+            margin-bottom: var(--space-24);
+            border-bottom: 2px solid var(--color-border);
+            flex-wrap: wrap;
+        }
+
+        .nav-tab {
+            padding: var(--space-12) var(--space-16);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-text-secondary);
+            border-bottom: 3px solid transparent;
+            transition: all var(--duration-fast) var(--ease-standard);
+            margin-bottom: -2px;
+        }
+
+        .nav-tab:hover {
+            color: var(--color-text);
+        }
+
+        .nav-tab.active {
+            color: var(--color-primary);
+            border-bottom-color: var(--color-primary);
+        }
+
+        /* Content Panels */
+        .content-panel {
+            display: none;
+        }
+
+        .content-panel.active {
+            display: block;
+            animation: fadeIn var(--duration-fast) var(--ease-standard);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Exercise Section */
+        .exercise-container {
+            background: var(--color-surface);
+            padding: var(--space-24);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-card-border);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: var(--space-24);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--color-border);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+            margin-bottom: var(--space-16);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-teal-400));
+            transition: width var(--duration-fast) var(--ease-standard);
+        }
+
+        .exercise-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-20);
+            padding-bottom: var(--space-16);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .exercise-number {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary);
+        }
+
+        .tense-badge {
+            display: inline-block;
+            padding: var(--space-6) var(--space-12);
+            background: var(--color-secondary);
+            color: var(--color-text);
+            border-radius: var(--radius-full);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+        }
+
+        .tense-badge.simple-past {
+            background: rgba(59, 130, 246, 0.15);
+            color: #1e40af;
+        }
+
+        .tense-badge.past-continuous {
+            background: rgba(249, 115, 22, 0.15);
+            color: #92400e;
+        }
+
+        .tense-badge.near-future {
+            background: rgba(34, 197, 94, 0.15);
+            color: #15803d;
+        }
+
+        .exercise-content {
+            margin: var(--space-24) 0;
+        }
+
+        .exercise-question {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-medium);
+            margin-bottom: var(--space-16);
+            line-height: var(--line-height-normal);
+        }
+
+        .exercise-sentence {
+            background: var(--color-secondary);
+            padding: var(--space-16);
+            border-radius: var(--radius-base);
+            margin-bottom: var(--space-16);
+            font-style: italic;
+            border-left: 4px solid var(--color-primary);
+        }
+
+        .input-group {
+            margin-bottom: var(--space-16);
+        }
+
+        .form-label {
+            display: block;
+            font-weight: var(--font-weight-medium);
+            margin-bottom: var(--space-8);
+            font-size: var(--font-size-sm);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: var(--space-12);
+            font-size: var(--font-size-base);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-base);
+            background: var(--color-white);
+            color: var(--color-text);
+            transition: border-color var(--duration-fast) var(--ease-standard);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: var(--focus-ring);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-10) var(--space-20);
+            border: none;
+            border-radius: var(--radius-base);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-medium);
+            cursor: pointer;
+            transition: all var(--duration-fast) var(--ease-standard);
+            gap: var(--space-8);
+        }
+
+        .btn:focus-visible {
+            outline: none;
+            box-shadow: var(--focus-ring);
+        }
+
+        .btn--primary {
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+        }
+
+        .btn--primary:hover {
+            background: var(--color-primary-hover);
+        }
+
+        .btn--primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .btn--secondary {
+            background: var(--color-secondary);
+            color: var(--color-text);
+        }
+
+        .btn--secondary:hover {
+            background: var(--color-secondary-hover);
+        }
+
+        .btn--outline {
+            background: transparent;
+            border: 1px solid var(--color-border);
+            color: var(--color-text);
+        }
+
+        .btn--outline:hover {
+            background: var(--color-secondary);
+        }
+
+        .btn--danger {
+            background: var(--color-error);
+            color: var(--color-white);
+        }
+
+        .btn--danger:hover {
+            background: rgba(var(--color-red-500-rgb), 0.9);
+        }
+
+        /* Feedback */
+        .feedback {
+            padding: var(--space-16);
+            border-radius: var(--radius-base);
+            margin-top: var(--space-16);
+            border-left: 4px solid;
+            display: none;
+        }
+
+        .feedback.show {
+            display: block;
+        }
+
+        .feedback--correct {
+            background: rgba(var(--color-green-500-rgb), 0.1);
+            border-left-color: var(--color-success);
+            color: #15803d;
+        }
+
+        .feedback--incorrect {
+            background: rgba(var(--color-red-500-rgb), 0.1);
+            border-left-color: var(--color-error);
+            color: #991b1b;
+        }
+
+        .feedback-title {
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-8);
+        }
+
+        .feedback-text {
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-normal);
+        }
+
+        /* Buttons Row */
+        .button-group {
+            display: flex;
+            gap: var(--space-12);
+            margin-top: var(--space-24);
+            flex-wrap: wrap;
+        }
+
+        .button-group .btn {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        /* Stats Card */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-16);
+            margin-bottom: var(--space-24);
+        }
+
+        .stat-card {
+            background: var(--color-surface);
+            padding: var(--space-20);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-card-border);
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-8);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .stat-value {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary);
+        }
+
+        .stat-subtitle {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            margin-top: var(--space-8);
+        }
+
+        /* Leaderboard */
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .leaderboard-table th {
+            background: var(--color-secondary);
+            padding: var(--space-12);
+            text-align: left;
+            font-weight: var(--font-weight-semibold);
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        .leaderboard-table td {
+            padding: var(--space-12);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .leaderboard-table tr:hover {
+            background: rgba(var(--color-teal-500-rgb), 0.05);
+        }
+
+        .rank-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: var(--radius-full);
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-sm);
+        }
+
+        .rank-badge.rank-1 {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
+        }
+
+        .rank-badge.rank-2 {
+            background: linear-gradient(135deg, #d1d5db, #9ca3af);
+            color: white;
+        }
+
+        .rank-badge.rank-3 {
+            background: linear-gradient(135deg, #f97316, #ea580c);
+            color: white;
+        }
+
+        .rank-badge.rank-other {
+            background: var(--color-secondary);
+            color: var(--color-text);
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: var(--space-32);
+        }
+
+        .empty-state h3 {
+            margin-bottom: var(--space-8);
+        }
+
+        .empty-state p {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-16);
+        }
+
+        /* Summary */
+        .summary-box {
+            background: linear-gradient(135deg, rgba(var(--color-teal-500-rgb), 0.1), rgba(var(--color-green-500-rgb), 0.1));
+            padding: var(--space-24);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-border);
+            margin-bottom: var(--space-24);
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: var(--space-16);
+            margin-top: var(--space-16);
+        }
+
+        .summary-item {
+            text-align: center;
+        }
+
+        .summary-item-value {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary);
+        }
+
+        .summary-item-label {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            margin-top: var(--space-4);
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: var(--space-16);
+            }
+
+            .header h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .exercise-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-12);
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .button-group .btn {
+                width: 100%;
+            }
+
+            .nav-tabs {
+                gap: var(--space-4);
+            }
+
+            .nav-tab {
+                padding: var(--space-8) var(--space-12);
+                font-size: var(--font-size-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🌍 English Tenses Practice</h1>
+            <p>Practica Pasado Simple, Pasado Continuo y Futuro Próximo</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="practice">Práctica</button>
+            <button class="nav-tab" data-tab="stats">Estadísticas</button>
+            <button class="nav-tab" data-tab="leaderboard">Leaderboard</button>
+            <button class="nav-tab" data-tab="help">Ayuda</button>
+        </div>
+
+        <!-- Practice Panel -->
+        <div id="practice" class="content-panel active">
+            <div class="exercise-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <div class="exercise-header">
+                    <div class="exercise-number" id="exerciseNumber">Ejercicio 1 / 50</div>
+                    <div class="tense-badge" id="tenseBadge">Simple Past</div>
+                </div>
+
+                <div class="exercise-content">
+                    <div class="exercise-question" id="question">Pregunta cargándose...</div>
+                    <div class="exercise-sentence" id="sentence"></div>
+                    
+                    <div class="input-group">
+                        <label class="form-label" for="answer">Tu respuesta:</label>
+                        <input type="text" id="answer" class="form-input" placeholder="Escribe la forma correcta del verbo" autocomplete="off">
+                    </div>
+
+                    <div class="feedback" id="feedback">
+                        <div class="feedback-title" id="feedbackTitle"></div>
+                        <div class="feedback-text" id="feedbackText"></div>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn--primary" id="submitBtn">Enviar Respuesta</button>
+                    <button class="btn btn--secondary" id="skipBtn">Saltar</button>
+                    <button class="btn btn--outline" id="resetBtn">Reiniciar Progreso</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Panel -->
+        <div id="stats" class="content-panel">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Ejercicios Completados</div>
+                    <div class="stat-value" id="completedStat">0</div>
+                    <div class="stat-subtitle">de 50</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Respuestas Correctas</div>
+                    <div class="stat-value" id="correctStat">0</div>
+                    <div class="stat-subtitle">Precisión</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Porcentaje de Éxito</div>
+                    <div class="stat-value" id="percentStat">0%</div>
+                    <div class="stat-subtitle">Desempeño</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Racha Actual</div>
+                    <div class="stat-value" id="streakStat">0</div>
+                    <div class="stat-subtitle">Respuestas seguidas correctas</div>
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h3>Resumen por Tiempo Verbal</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <div class="summary-item-label">Pasado Simple</div>
+                        <div class="summary-item-value" id="simplePastCount">0</div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-item-label">Pasado Continuo</div>
+                        <div class="summary-item-value" id="pastContCount">0</div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-item-label">Futuro Próximo</div>
+                        <div class="summary-item-value" id="futureCount">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: var(--space-24); text-align: center;">
+                <button class="btn btn--danger" id="clearStatsBtn">Limpiar Estadísticas</button>
+            </div>
+        </div>
+
+        <!-- Leaderboard Panel -->
+        <div id="leaderboard" class="content-panel">
+            <div class="exercise-container">
+                <h3 style="margin-bottom: var(--space-16);">🏆 Top Estudiantes</h3>
+                <table class="leaderboard-table" id="leaderboardTable">
+                    <thead>
+                        <tr>
+                            <th>Posición</th>
+                            <th>Nombre</th>
+                            <th>Correctas</th>
+                            <th>Completadas</th>
+                            <th>Porcentaje</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardBody">
+                        <tr>
+                            <td colspan="5" style="text-align: center; padding: var(--space-24);">
+                                Sin datos. ¡Completa ejercicios para aparecer!
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="margin-top: var(--space-24);">
+                    <label class="form-label">Tu nombre (para leaderboard):</label>
+                    <div style="display: flex; gap: var(--space-8); margin-bottom: var(--space-16);">
+                        <input type="text" id="playerName" class="form-input" placeholder="Ingresa tu nombre" value="">
+                        <button class="btn btn--primary" id="saveNameBtn">Guardar Nombre</button>
+                    </div>
+                    <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+                        Tu nombre actual: <strong id="currentNameDisplay">Anónimo</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Help Panel -->
+        <div id="help" class="content-panel">
+            <div class="exercise-container">
+                <h3>Guía de Referencia - Tiempos Verbales</h3>
+
+                <div style="margin-top: var(--space-24);">
+                    <h4 style="color: var(--color-primary); margin-top: var(--space-24); margin-bottom: var(--space-12);">📌 Pasado Simple (Simple Past)</h4>
+                    <p><strong>Estructura:</strong> Verbo + -ed (regulares) o forma irregular (irregulares)</p>
+                    <p><strong>Uso:</strong> Acciones completadas en el pasado</p>
+                    <p><strong>Ejemplos:</strong></p>
+                    <ul style="margin-left: var(--space-20); margin-top: var(--space-8); color: var(--color-text-secondary);">
+                        <li>I walked to school yesterday. (Caminé a la escuela ayer)</li>
+                        <li>She ate dinner at 6 PM. (Ella comió cena a las 6 PM)</li>
+                        <li>They saw a movie last week. (Vieron una película la semana pasada)</li>
+                    </ul>
+
+                    <h4 style="color: var(--color-primary); margin-top: var(--space-24); margin-bottom: var(--space-12);">⏳ Pasado Continuo (Past Continuous)</h4>
+                    <p><strong>Estructura:</strong> was/were + verbo + -ing</p>
+                    <p><strong>Uso:</strong> Acciones en progreso en el pasado</p>
+                    <p><strong>Ejemplos:</strong></p>
+                    <ul style="margin-left: var(--space-20); margin-top: var(--space-8); color: var(--color-text-secondary);">
+                        <li>I was walking when it rained. (Estaba caminando cuando llovió)</li>
+                        <li>She was studying all day. (Ella estuvo estudiando todo el día)</li>
+                        <li>They were watching TV at 8 PM. (Estaban viendo TV a las 8 PM)</li>
+                    </ul>
+
+                    <h4 style="color: var(--color-primary); margin-top: var(--space-24); margin-bottom: var(--space-12);">🚀 Futuro Próximo (Near Future - Going to)</h4>
+                    <p><strong>Estructura:</strong> am/is/are + going to + verbo infinitivo</p>
+                    <p><strong>Uso:</strong> Planes o predicciones para el futuro</p>
+                    <p><strong>Ejemplos:</strong></p>
+                    <ul style="margin-left: var(--space-20); margin-top: var(--space-8); color: var(--color-text-secondary);">
+                        <li>I am going to study tonight. (Voy a estudiar esta noche)</li>
+                        <li>She is going to visit her mother. (Ella va a visitar a su madre)</li>
+                        <li>They are going to travel next month. (Van a viajar el próximo mes)</li>
+                    </ul>
+
+                    <h4 style="color: var(--color-primary); margin-top: var(--space-24); margin-bottom: var(--space-12);">💡 Consejos para Práctica</h4>
+                    <ul style="margin-left: var(--space-20); margin-top: var(--space-8); color: var(--color-text-secondary);">
+                        <li>Lee cuidadosamente el contexto y el tiempo indicado</li>
+                        <li>Presta atención a las palabras de tiempo (yesterday, at 8 PM, next week, etc.)</li>
+                        <li>Memoriza verbos irregulares comunes: go/went, eat/ate, see/saw, be/was-were</li>
+                        <li>Practica regularmente para mejorar tu precisión</li>
+                        <li>Usa la retroalimentación para entender tus errores</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Datos de ejercicios - 50 ejercicios distribuidoss
+        const exercises = [
+            // SIMPLE PAST (1-17)
+            { tense: 'simple-past', question: 'Completa: I ___ to the park yesterday.', sentence: 'Yesterday was sunny.', answer: 'walked', hint: 'walk → walked' },
+            { tense: 'simple-past', question: 'Completa: She ___ her homework last night.', sentence: 'She was tired.', answer: 'finished', hint: 'finish → finished' },
+            { tense: 'simple-past', question: 'Completa: They ___ dinner at 7 PM.', sentence: 'It was a special day.', answer: 'ate', hint: 'eat → ate' },
+            { tense: 'simple-past', question: 'Completa: He ___ a great movie last weekend.', sentence: 'It was very entertaining.', answer: 'watched', hint: 'watch → watched' },
+            { tense: 'simple-past', question: 'Completa: I ___ my friend yesterday.', sentence: 'We had fun together.', answer: 'met', hint: 'meet → met' },
+            { tense: 'simple-past', question: 'Completa: The weather ___ cold in winter.', sentence: 'Everyone wore jackets.', answer: 'was', hint: 'be → was' },
+            { tense: 'simple-past', question: 'Completa: We ___ to London last year.', sentence: 'It was wonderful.', answer: 'went', hint: 'go → went' },
+            { tense: 'simple-past', question: 'Completa: She ___ him to the party.', sentence: 'He was happy.', answer: 'invited', hint: 'invite → invited' },
+            { tense: 'simple-past', question: 'Completa: They ___ the house at noon.', sentence: 'It was time to leave.', answer: 'left', hint: 'leave → left' },
+            { tense: 'simple-past', question: 'Completa: I ___ my keys yesterday.', sentence: 'It was very frustrating.', answer: 'lost', hint: 'lose → lost' },
+            { tense: 'simple-past', question: 'Completa: He ___ for hours to find the solution.', sentence: 'He finally succeeded.', answer: 'worked', hint: 'work → worked' },
+            { tense: 'simple-past', question: 'Completa: They ___ at the restaurant yesterday.', sentence: 'The food was delicious.', answer: 'ate', hint: 'eat → ate' },
+            { tense: 'simple-past', question: 'Completa: She ___ to class this morning.', sentence: 'She was on time.', answer: 'came', hint: 'come → came' },
+            { tense: 'simple-past', question: 'Completa: The boys ___ football in the park.', sentence: 'They were very active.', answer: 'played', hint: 'play → played' },
+            { tense: 'simple-past', question: 'Completa: I ___ the book in one week.', sentence: 'It was exciting.', answer: 'read', hint: 'read → read' },
+            { tense: 'simple-past', question: 'Completa: We ___ music all night long.', sentence: 'It was a great party.', answer: 'heard', hint: 'hear → heard' },
+            { tense: 'simple-past', question: 'Completa: She ___ a beautiful dress to the wedding.', sentence: 'Everyone complimented her.', answer: 'wore', hint: 'wear → wore' },
+
+            // PAST CONTINUOUS (18-34)
+            { tense: 'past-continuous', question: 'Completa: I ___ when my friend called.', sentence: 'It was morning.', answer: 'was studying', hint: 'be (was) + study + -ing' },
+            { tense: 'past-continuous', question: 'Completa: She ___ dinner when the doorbell rang.', sentence: 'She was hungry.', answer: 'was cooking', hint: 'be (was) + cook + -ing' },
+            { tense: 'past-continuous', question: 'Completa: They ___ a movie when the power went out.', sentence: 'Everyone was scared.', answer: 'were watching', hint: 'be (were) + watch + -ing' },
+            { tense: 'past-continuous', question: 'Completa: He ___ the guitar when I arrived.', sentence: 'The music was beautiful.', answer: 'was playing', hint: 'be (was) + play + -ing' },
+            { tense: 'past-continuous', question: 'Completa: We ___ in the rain yesterday.', sentence: 'We got wet.', answer: 'were walking', hint: 'be (were) + walk + -ing' },
+            { tense: 'past-continuous', question: 'Completa: The baby ___ when the noise started.', sentence: 'Everyone was worried.', answer: 'was sleeping', hint: 'be (was) + sleep + -ing' },
+            { tense: 'past-continuous', question: 'Completa: I ___ for the exam all night.', sentence: 'I was tired.', answer: 'was preparing', hint: 'be (was) + prepare + -ing' },
+            { tense: 'past-continuous', question: 'Completa: She ___ tea when I visited her.', sentence: 'It was relaxing.', answer: 'was drinking', hint: 'be (was) + drink + -ing' },
+            { tense: 'past-continuous', question: 'Completa: They ___ about the project when the boss entered.', sentence: 'They looked serious.', answer: 'were talking', hint: 'be (were) + talk + -ing' },
+            { tense: 'past-continuous', question: 'Completa: He ___ home when it started to rain.', sentence: 'He ran quickly.', answer: 'was running', hint: 'be (was) + run + -ing' },
+            { tense: 'past-continuous', question: 'Completa: I ___ at my desk when the meeting started.', sentence: 'I was late.', answer: 'was sitting', hint: 'be (was) + sit + -ing' },
+            { tense: 'past-continuous', question: 'Completa: She ___ the house when we arrived.', sentence: 'Everything was clean.', answer: 'was cleaning', hint: 'be (was) + clean + -ing' },
+            { tense: 'past-continuous', question: 'Completa: They ___ in the ocean when they saw the dolphins.', sentence: 'It was magical.', answer: 'were swimming', hint: 'be (were) + swim + -ing' },
+            { tense: 'past-continuous', question: 'Completa: He ___ his phone when he crashed.', sentence: 'It was dangerous.', answer: 'was using', hint: 'be (was) + use + -ing' },
+
+            // NEAR FUTURE (35-50)
+            { tense: 'near-future', question: 'Completa: I ___ to the movies tonight.', sentence: 'I\'m excited.', answer: 'am going to go', hint: 'be (am) + going to + go' },
+            { tense: 'near-future', question: 'Completa: She ___ her exams next week.', sentence: 'She is nervous.', answer: 'is going to take', hint: 'be (is) + going to + take' },
+            { tense: 'near-future', question: 'Completa: We ___ to visit my grandma.', sentence: 'She misses us.', answer: 'are going to visit', hint: 'be (are) + going to + visit' },
+            { tense: 'near-future', question: 'Completa: He ___ a new job next month.', sentence: 'He is happy.', answer: 'is going to start', hint: 'be (is) + going to + start' },
+            { tense: 'near-future', question: 'Completa: They ___ a picnic this weekend.', sentence: 'It will be fun.', answer: 'are going to have', hint: 'be (are) + going to + have' },
+            { tense: 'near-future', question: 'Completa: I ___ my house.', sentence: 'I need to clean it.', answer: 'am going to clean', hint: 'be (am) + going to + clean' },
+            { tense: 'near-future', question: 'Completa: She ___ her best friend.', sentence: 'They haven\'t seen each other in a long time.', answer: 'is going to meet', hint: 'be (is) + going to + meet' },
+            { tense: 'near-future', question: 'Completa: We ___ a new project together.', sentence: 'We are excited.', answer: 'are going to start', hint: 'be (are) + going to + start' },
+            { tense: 'near-future', question: 'Completa: He ___ to London next year.', sentence: 'It will be amazing.', answer: 'is going to travel', hint: 'be (is) + going to + travel' },
+            { tense: 'near-future', question: 'Completa: They ___ for the championship.', sentence: 'They are confident.', answer: 'are going to compete', hint: 'be (are) + going to + compete' },
+            { tense: 'near-future', question: 'Completa: I ___ her about the news.', sentence: 'She needs to know.', answer: 'am going to tell', hint: 'be (am) + going to + tell' },
+            { tense: 'near-future', question: 'Completa: She ___ a new car next month.', sentence: 'She has saved enough money.', answer: 'is going to buy', hint: 'be (is) + going to + buy' },
+            { tense: 'near-future', question: 'Completa: We ___ the kitchen.', sentence: 'It needs renovation.', answer: 'are going to renovate', hint: 'be (are) + going to + renovate' },
+            { tense: 'near-future', question: 'Completa: He ___ for his driving license.', sentence: 'He is prepared.', answer: 'is going to apply', hint: 'be (is) + going to + apply' },
+            { tense: 'near-future', question: 'Completa: They ___ with us for dinner.', sentence: 'We are waiting for them.', answer: 'are going to join', hint: 'be (are) + going to + join' },
+        ];
+
+        // App state
+        let currentIndex = 0;
+        let stats = {
+            completed: 0,
+            correct: 0,
+            streak: 0,
+            answers: {}
+        };
+        let playerName = 'Anónimo';
+        let leaderboard = [];
+
+        // DOM elements
+        const tabButtons = document.querySelectorAll('.nav-tab');
+        const contentPanels = document.querySelectorAll('.content-panel');
+        const submitBtn = document.getElementById('submitBtn');
+        const skipBtn = document.getElementById('skipBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const answerInput = document.getElementById('answer');
+        const feedback = document.getElementById('feedback');
+        const playerNameInput = document.getElementById('playerName');
+        const saveNameBtn = document.getElementById('saveNameBtn');
+        const clearStatsBtn = document.getElementById('clearStatsBtn');
+
+        // Initialize
+        function init() {
+            loadData();
+            setupEventListeners();
+            loadExercise();
+            updateStats();
+            updateLeaderboard();
+            displayPlayerName();
+        }
+
+        function setupEventListeners() {
+            tabButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const tabName = e.target.dataset.tab;
+                    switchTab(tabName);
+                });
+            });
+
+            submitBtn.addEventListener('click', submitAnswer);
+            skipBtn.addEventListener('click', skipExercise);
+            resetBtn.addEventListener('click', resetProgress);
+            answerInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') submitAnswer();
+            });
+            saveNameBtn.addEventListener('click', saveName);
+            clearStatsBtn.addEventListener('click', clearStats);
+        }
+
+        function switchTab(tabName) {
+            // Update active tab button
+            tabButtons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.tab === tabName) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Update active panel
+            contentPanels.forEach(panel => {
+                panel.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+
+            // Refresh stats when switching to stats tab
+            if (tabName === 'stats') {
+                updateStats();
+            }
+            if (tabName === 'leaderboard') {
+                updateLeaderboard();
+            }
+        }
+
+        function loadExercise() {
+            const exercise = exercises[currentIndex];
+            document.getElementById('exerciseNumber').textContent = `Ejercicio ${currentIndex + 1} / 50`;
+            document.getElementById('question').textContent = exercise.question;
+            document.getElementById('sentence').textContent = `"${exercise.sentence}"`;
+            
+            const badge = document.getElementById('tenseBadge');
+            badge.textContent = getTenseLabel(exercise.tense);
+            badge.className = `tense-badge ${exercise.tense}`;
+            
+            answerInput.value = '';
+            feedback.classList.remove('show');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Enviar Respuesta';
+            
+            const progress = ((currentIndex + 1) / exercises.length) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            
+            answerInput.focus();
+        }
+
+        function getTenseLabel(tense) {
+            const labels = {
+                'simple-past': '📌 Pasado Simple',
+                'past-continuous': '⏳ Pasado Continuo',
+                'near-future': '🚀 Futuro Próximo'
+            };
+            return labels[tense] || tense;
+        }
+
+        function submitAnswer() {
+            const userAnswer = answerInput.value.trim().toLowerCase();
+            const correctAnswer = exercises[currentIndex].answer.toLowerCase();
+            
+            const isCorrect = userAnswer === correctAnswer;
+            
+            showFeedback(isCorrect, exercises[currentIndex]);
+            
+            stats.completed++;
+            stats.answers[currentIndex] = { answer: userAnswer, correct: isCorrect };
+            
+            if (isCorrect) {
+                stats.correct++;
+                stats.streak++;
+            } else {
+                stats.streak = 0;
+            }
+            
+            saveData();
+            updateStats();
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = isCorrect ? '✓ Correcto' : '✗ Incorrecto';
+            
+            setTimeout(() => {
+                nextExercise();
+            }, 2000);
+        }
+
+        function showFeedback(isCorrect, exercise) {
+            const title = document.getElementById('feedbackTitle');
+            const text = document.getElementById('feedbackText');
+            
+            if (isCorrect) {
+                feedback.className = 'feedback show feedback--correct';
+                title.textContent = '¡Correcto! 🎉';
+                text.textContent = `Excelente. La respuesta correcta es: "${exercise.answer}"`;
+            } else {
+                feedback.className = 'feedback show feedback--incorrect';
+                title.textContent = '❌ Incorrecto';
+                text.innerHTML = `<p>Tu respuesta: "${answerInput.value}"</p><p>Respuesta correcta: "<strong>${exercise.answer}</strong>"</p><p><em>${exercise.hint}</em></p>`;
+            }
+        }
+
+        function nextExercise() {
+            if (currentIndex < exercises.length - 1) {
+                currentIndex++;
+                loadExercise();
+            } else {
+                showCompletion();
+            }
+        }
+
+        function skipExercise() {
+            stats.completed++;
+            stats.streak = 0;
+            stats.answers[currentIndex] = { answer: '', correct: false };
+            saveData();
+            updateStats();
+            nextExercise();
+        }
+
+        function showCompletion() {
+            const completed = Object.values(stats.answers).filter(a => a.correct).length;
+            const percentage = Math.round((completed / Object.keys(stats.answers).length) * 100);
+            
+            alert(`¡Felicidades! Completaste todos los ejercicios!\n\nRespuestas correctas: ${completed}/${Object.keys(stats.answers).length}\nPorcentaje: ${percentage}%`);
+            
+            addToLeaderboard();
+            currentIndex = 0;
+            loadExercise();
+        }
+
+        function resetProgress() {
+            if (confirm('¿Estás seguro de que deseas reiniciar tu progreso? Esta acción no se puede deshacer.')) {
+                stats = {
+                    completed: 0,
+                    correct: 0,
+                    streak: 0,
+                    answers: {}
+                };
+                currentIndex = 0;
+                saveData();
+                loadExercise();
+                updateStats();
+            }
+        }
+
+        function saveName() {
+            const name = playerNameInput.value.trim();
+            if (name) {
+                playerName = name;
+                localStorage.setItem('playerName', name);
+                displayPlayerName();
+                playerNameInput.value = '';
+                alert('¡Nombre guardado!');
+            } else {
+                alert('Por favor ingresa un nombre.');
+            }
+        }
+
+        function displayPlayerName() {
+            document.getElementById('currentNameDisplay').textContent = playerName;
+        }
+
+        function addToLeaderboard() {
+            const completed = Object.keys(stats.answers).length;
+            const correct = Object.values(stats.answers).filter(a => a.correct).length;
+            const percentage = Math.round((correct / completed) * 100);
+            
+            leaderboard.push({
+                name: playerName,
+                correct: correct,
+                completed: completed,
+                percentage: percentage,
+                date: new Date().toLocaleDateString()
+            });
+            
+            leaderboard.sort((a, b) => {
+                if (b.percentage !== a.percentage) return b.percentage - a.percentage;
+                return b.correct - a.correct;
+            });
+            
+            leaderboard = leaderboard.slice(0, 10);
+            saveData();
+        }
+
+        function updateLeaderboard() {
+            const tbody = document.getElementById('leaderboardBody');
+            
+            if (leaderboard.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; padding: var(--space-24);">Sin datos. ¡Completa ejercicios para aparecer!</td></tr>';
+                return;
+            }
+            
+            tbody.innerHTML = leaderboard.map((entry, index) => {
+                let rankClass = 'rank-other';
+                if (index === 0) rankClass = 'rank-1';
+                else if (index === 1) rankClass = 'rank-2';
+                else if (index === 2) rankClass = 'rank-3';
+                
+                return `
+                    <tr>
+                        <td><span class="rank-badge ${rankClass}">${index + 1}</span></td>
+                        <td>${entry.name}</td>
+                        <td>${entry.correct}</td>
+                        <td>${entry.completed}</td>
+                        <td>${entry.percentage}%</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function updateStats() {
+            const completed = Object.keys(stats.answers).length;
+            const correct = Object.values(stats.answers).filter(a => a.correct).length;
+            const percentage = completed > 0 ? Math.round((correct / completed) * 100) : 0;
+            
+            document.getElementById('completedStat').textContent = completed;
+            document.getElementById('correctStat').textContent = correct;
+            document.getElementById('percentStat').textContent = percentage + '%';
+            document.getElementById('streakStat').textContent = stats.streak;
+            
+            // Count by tense
+            let simplePastCount = 0, pastContCount = 0, futureCount = 0;
+            
+            exercises.forEach((ex, idx) => {
+                if (stats.answers[idx]?.correct) {
+                    if (ex.tense === 'simple-past') simplePastCount++;
+                    else if (ex.tense === 'past-continuous') pastContCount++;
+                    else if (ex.tense === 'near-future') futureCount++;
+                }
+            });
+            
+            document.getElementById('simplePastCount').textContent = simplePastCount;
+            document.getElementById('pastContCount').textContent = pastContCount;
+            document.getElementById('futureCount').textContent = futureCount;
+        }
+
+        function clearStats() {
+            if (confirm('¿Deseas limpiar todas tus estadísticas? Esta acción no se puede deshacer.')) {
+                stats = {
+                    completed: 0,
+                    correct: 0,
+                    streak: 0,
+                    answers: {}
+                };
+                currentIndex = 0;
+                saveData();
+                loadExercise();
+                updateStats();
+                alert('Estadísticas limpias.');
+            }
+        }
+
+        function saveData() {
+            localStorage.setItem('stats', JSON.stringify(stats));
+            localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+            localStorage.setItem('currentIndex', currentIndex);
+        }
+
+        function loadData() {
+            const savedStats = localStorage.getItem('stats');
+            const savedLeaderboard = localStorage.getItem('leaderboard');
+            const savedIndex = localStorage.getItem('currentIndex');
+            const savedName = localStorage.getItem('playerName');
+            
+            if (savedStats) stats = JSON.parse(savedStats);
+            if (savedLeaderboard) leaderboard = JSON.parse(savedLeaderboard);
+            if (savedIndex) currentIndex = parseInt(savedIndex);
+            if (savedName) playerName = savedName;
+        }
+
+        // Start the app
+        init();
+    </script>
+</body>
+</html>
